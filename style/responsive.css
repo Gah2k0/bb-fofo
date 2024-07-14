@@ -1,0 +1,36 @@
+@media screen and (max-width:700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .botao {
+        margin-top: 5px;
+        width: 225px;
+    }
+    .bebe-principal {
+        background-position: center;
+    }
+    .bebe-principal .container{
+        width: 80vw;
+        text-align: center;
+    }
+    .bebe-principal .container .titulo{
+        font-size: 1.8rem;
+        padding: 10px;
+    }
+    .bebe-principal .descricao{
+    margin-bottom: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .bebe-principal .descricao{
+        font-size: 1.5rem;
+        padding: 10px;
+        }
+    .botao {
+        font-size: 1rem;
+    }
+}

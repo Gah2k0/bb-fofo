@@ -1,0 +1,163 @@
+:root {
+    --azul: #004fff;
+    --preto: #050505;
+    --branco: #fff;
+    --azul-serenity: #b0cddf;
+    --beige: #f5f5dc;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../font/montserrat/Montserrat-Medium.ttf');
+}
+@font-face {
+    font-family: 'amatic';
+    src: url('../font/amatic/AmaticSC-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+    background-color: var(--azul-serenity);
+    color: var(--beige);
+    font-family: montserrat;
+}
+
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--branco);
+    margin-left: 15px;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(197, 197, 197);
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+    transition: color 0.5s;
+}
+
+/*filme principal*/
+.bebe-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/mais-linda.jpg);
+    
+
+    height: 1000px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bebe-principal .descricao {
+    margin-bottom: 90px;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bebe-principal .container{
+    margin-left: 30px;
+    width: 60%;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #fff;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 1s ease all;
+
+}
+
+.botao:hover {
+    background-color: #fff;
+    color: #050505;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+/* carousel */
+
+.box-bebe {
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.item h2 {
+    text-align: center;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.center {
+    justify-content: center;
+    display: flex;
+}
+
+.categoria {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    /* background-color: var(--azul); */
+    /* width: 500px; */
+    /* border-radius: 20px; */
+    margin: 15px;
+    font-family: montserrat;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    color: #FFF;
+    width: 100%;
+    height: 100px;   
+    margin-top: 40px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer a {
+    color: #fff;
+    margin-right: 10px;
+}
+
+footer a:hover {
+    transition: ease-in-out .5s;
+    color: var(--azul);
+}
+
